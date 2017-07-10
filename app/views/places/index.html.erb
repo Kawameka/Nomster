@@ -1,3 +1,5 @@
+<%= will_paginate(@places, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
+
 <% @places.each do |place| %>
     <!-- col-10 determines the size of the box in a grid -->
     <!-- offset-1 offsets the box location by 1 block on each side -->
@@ -8,3 +10,5 @@
         <p><%= place.description %></p><br />
     </div>
 <% end %>
+
+<%= will_paginate(@places, :renderer => WillPaginate::ActionView::Bootstrap4LinkRenderer) %>
