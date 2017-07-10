@@ -3,4 +3,6 @@ Rails.application.routes.draw do
 
   #includes the index action when using rake routes in command line
   root 'places#index'
+  #adds default routes to rake routes table
+  resources :places
 end

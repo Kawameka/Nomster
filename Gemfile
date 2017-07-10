@@ -58,3 +58,6 @@ end
 gem 'will_paginate', '>= 3.1'
 
 gem 'bootstrap-will_paginate', '~> 1.0'
+
+# new place form gem
+gem 'simple_form'
