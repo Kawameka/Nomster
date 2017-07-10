@@ -61,3 +61,6 @@ gem 'bootstrap-will_paginate', '~> 1.0'
 
 # new place form gem
 gem 'simple_form'
+
+# font-awesome icons gem
+gem "font-awesome-rails"
