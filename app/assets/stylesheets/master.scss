@@ -8,8 +8,14 @@ body {
 
 .navbar {
     background: image_url('dark_embroidery.png');
-    //box-shadow: horizontal vertical blur color;
-    box-shadow: 0px 5px 5px grey;
+    // https://www.w3schools.com/css/css3_shadows.asp
+    // box-shadow: horizontal vertical blur color;
+    box-shadow: 0px 2px 3px grey;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #DB3550;
+    font-family: 'Bellefair', serif;
 }
 
 .booyah-box {
