@@ -6,11 +6,12 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
 
   <body>
-
-    <!--begin navbar --> 
+    <!--begin navbar -->
+    <!-- navbar code from https://v4-alpha.getbootstrap.com/components/navbar/#toggler -->
     <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse">
       <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -26,6 +27,7 @@
       </div>
     </nav>
     <!-- end navbar -->
+    <br \>
 
 
     <%= yield %>
