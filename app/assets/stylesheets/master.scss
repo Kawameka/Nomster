@@ -1,5 +1,17 @@
 @import "bootstrap";
 
+body {
+    // image_url tells Rails to look in the app/assets/images folder
+    background: image_url('saya.png');
+    font-family: Constantia, "Lucida Bright", Lucidabright, "Lucida Serif", Lucida, "DejaVu Serif", "Bitstream Vera Serif", "Liberation Serif", Georgia, serif;
+}
+
+.navbar {
+    background: image_url('dark_embroidery.png');
+    //box-shadow: horizontal vertical blur color;
+    box-shadow: 0px 5px 5px grey;
+}
+
 .booyah-box {
   -moz-box-shadow: 1px 1px 2px 0 #d0d0d0;
   -webkit-box-shadow: 1px 1px 2px 0 #d0d0d0;
