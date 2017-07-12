@@ -8,6 +8,12 @@
         <h1><%= place.name %></h1>
         <i><%= place.address %></i><br /><br />
         <p><%= place.description %></p><br />
+
+        <!-- checks if the place was made by a user -->
+        <!-- then displays the user's email -->
+        <% if place.user.present? %>
+            <small><%= place.user.email %></small>
+        <% end %>
     </div>
 <% end %>
 

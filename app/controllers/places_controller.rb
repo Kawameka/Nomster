@@ -1,4 +1,6 @@
 class PlacesController < ApplicationController
+    # requires that the user is signed up before they can create a new place entry
+    before_action :authenticate_user!, only: [:new, :create]
 
     def index
         @places = Place.paginate(:page => params[:page], :per_page => 5)
@@ -11,7 +13,7 @@ class PlacesController < ApplicationController
 
     # creates a db entry for user entered place
     def create
-        Place.create(place_params)
+        current_user.places.create(place_params)
         redirect_to root_path
     end
     
