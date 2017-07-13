@@ -5,7 +5,8 @@
     <!-- offset-1 offsets the box location by 1 block on each side -->
     <div class="booyah-box col-10 offset-1">
     <!-- displays aspects of place -->
-        <h1><%= place.name %></h1>
+        <!-- links to individual place page by pathing to place ID -->
+        <h1><%= link_to place.name, place_path(place) %></h1><br />
         <i><%= place.address %></i><br /><br />
         <p><%= place.description %></p><br />
 
