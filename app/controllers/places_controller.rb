@@ -18,8 +18,14 @@ class PlacesController < ApplicationController
     end
 
     def show
+        # pulls the id from the url
         @place = Place.find(params[:id])
     end
+
+    def edit
+        @place = Place.find(params[:id])
+    end
+    
     
     
     private
