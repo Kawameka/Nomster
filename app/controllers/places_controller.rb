@@ -24,6 +24,7 @@ class PlacesController < ApplicationController
     def show
         # pulls the id from the url
         @place = Place.find(params[:id])
+        @comment = Comment.new
     end
 
     def edit
