@@ -8,6 +8,7 @@ Rails.application.routes.draw do
   resources :places do
     # nested resources includes the parent resource route
     resources :comments, only: :create
+    resources :photos, only: :create
   end
   
 end

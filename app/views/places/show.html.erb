@@ -92,3 +92,20 @@
         </div>
     <% end %>
 </div>
+
+<div class="clear"></div>
+
+<%= simple_form_for @photo, url: place_photos_path(@place) do |f| %>
+    <%= f.input :caption %>
+    <%= f.submit "Add a Photo", class: 'btn btn-primary' %>
+<% end %>
+
+<div class="clear"></div>
+
+<% @place.photos.each do |photo| %>
+    <div class="booyah-box">
+        <blockquote>
+            <%= photo.caption %>
+        </blockquote>
+    </div>
+<% end %>
