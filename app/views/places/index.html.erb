@@ -8,7 +8,11 @@
         <!-- links to individual place page by pathing to place ID -->
         <h1><%= link_to place.name, place_path(place) %></h1><br />
         <i><%= place.address %></i><br /><br />
-        <p><%= place.description %></p><br />
+        <p><%= place.description %></p>
+        <% if place.photos.present? %>
+            <%= image_tag place.photos.first.picture, class: "image-box" %>
+        <% end %>
+        <br />
 
         <!-- checks if the place was made by a user -->
         <!-- then displays the user's email -->
