@@ -68,7 +68,12 @@ gem "font-awesome-rails"
 # devise authentication gem
 gem 'devise'
 
-#geocoding location convertor gem
+# geocoding location convertor gem
 gem "geocoder"
 
 gem "figaro"
+
+# photo adding gem
+gem 'carrierwave', '~> 1.0'
+
+gem "fog-aws"
