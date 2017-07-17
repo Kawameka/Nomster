@@ -12,6 +12,7 @@ body {
     // https://www.w3schools.com/css/css3_shadows.asp
     // box-shadow: horizontal vertical blur color;
     box-shadow: 0px 2px 3px grey;
+    margin-bottom: 0;
 }
 
 .navbar-inverse .navbar-brand {
@@ -85,4 +86,24 @@ blockquote p {
   max-width: 80%;
   display: block;
   margin: 0 auto;
+}
+
+.carousel-inner > .carousel-item > img, .carousel-inner > .carousel-item > a > img {
+  max-height: 550px;
+  width: 100%;
+}
+
+.carousel-caption {
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
+  font-size: 60px;
+  font-weight: 100;
+  text-shadow: rgba(0, 0, 0, 0.95) 2px 2px;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  position: absolute;
+  left: 0;
+}
+
+.carousel {
+  box-shadow: 0px 3px 8px #2a2a2a;
 }
