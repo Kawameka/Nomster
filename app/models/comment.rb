@@ -1,6 +1,7 @@
 class Comment < ApplicationRecord
     belongs_to :user
     belongs_to :place
+    after_create :send_comment_email
 
     RATINGS = {
         'one star': '1_star',
@@ -14,4 +15,9 @@ class Comment < ApplicationRecord
         RATINGS.invert[self.rating]
     end
     
+    def send_comment_email
+        # self means current comment being looked at
+        NotificationMailer.comment_added(self).deliver
+    end
+
 end
